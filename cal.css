@@ -1,0 +1,109 @@
+body, ul, li,select {
+    /* Clear default styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li {
+    list-style: none;
+}
+.calculator {
+    /* Entire calculator box */
+    max-width: 375px;
+    margin: 20px auto;
+    border: 10px solid #eee;
+    border-radius: 30px;
+}
+.cal-header {
+    /* calculator title */
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.cal-main {
+    /* All internal fonts */
+    font-size: 15px;
+}
+.cal-main .origin-value {
+    /* Display bar */
+    padding: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.cal-main .origin-type,
+.cal-main .target-type {
+    padding-left: 5px;
+    width: 70px;
+    font-size: 14px;
+    height: 30px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.cal-keyboard {
+    overflow: hidden;
+}
+.cal-items {
+    overflow: hidden;
+}
+.cal-items li {
+    user-select: none;
+    float: left;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    box-sizing: border-box;
+}
+li:nth-of-type(5n+1) {
+    /* Remove the left border for every five elements,
+    align elements.*/
+    border-left: none;
+}
+li[data-action=operator] {
+    background: #20a0a4;
+    color: #fff;
+}
+.Note{
+    /* Note */
+    font-size: 15px;
+    color: #49494a;
+    font-weight: none;
+    height: 48px;
+    text-align: center;
+}
+
+/* Waiting--Backspace */
+/* .buttons {
+    float: left;
+    width: 75px;
+}
+.buttons .btn {
+    width: 75px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+.btn-esc {
+    color: #11d38f;
+}
+.btn-backspace {
+    position: relative;
+} */
